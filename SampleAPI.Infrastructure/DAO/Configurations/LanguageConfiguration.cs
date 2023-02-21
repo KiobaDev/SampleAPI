@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SampleAPI.Core.Entities;
 
 namespace SampleAPI.Infrastructure.DAO.Configurations;
-internal class LanguageConfiguration : IEntityTypeConfiguration<Language>
+internal sealed class LanguageConfiguration : IEntityTypeConfiguration<Language>
 {
     public void Configure(EntityTypeBuilder<Language> builder)
     {
